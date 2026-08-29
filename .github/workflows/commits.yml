@@ -19,7 +19,7 @@ jobs:
     name: Conventional Commits
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
@@ -35,7 +35,7 @@ jobs:
     name: Pull request title
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
 
       # A prebuilt binary rather than `cargo install`, which compiles committed
       # from source on every pull request for no benefit.
