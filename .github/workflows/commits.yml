@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: crate-ci/committed@v1.1.11
+      - uses: crate-ci/committed@v1.1.12
         with:
           args: --config committed.toml
           commits: ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
